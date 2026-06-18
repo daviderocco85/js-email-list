@@ -4,13 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Axios-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!--Boostrap 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
     <title>Js Email List</title>
 </head>
 
 <body>
-    <ul class="email-list"></ul>
-    <button type="button" class="new-email">Genera le nuove email</button>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+
+                <div class="card shadow p-4">
+                    <h2 class="text-center mb-4">Email Generator</h2>
+
+                    <ul class="email-list list-group mb-4">
+
+                        <!-- li items will be injected here by API JavaScript -->
+                    </ul>
+
+                    <button type="button" class="new-email btn btn-primary w-100">
+                        Genera nuove email
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
     <script src="script/script.js"></script>
 </body>
 
