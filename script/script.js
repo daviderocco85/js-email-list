@@ -4,15 +4,15 @@ const buttonNewEmail = document.querySelector('.new-email');
 // Promise con axios
 
 const loadEmails = () => {
-    // svuota console
-    console.clear();
+    
     // svuota email list prima di generarla
     resultEmailList.innerHTML = '';
-
+    // Ciclo per ottenere 10 email
     for (let i = 0; i < 10; i++) {
+        // Get all' API 
         axios.get("https://flynn.boolean.careers/exercises/api/random/mail")
             .then(response => {
-                console.log(response.data);
+                // Template literal che aggiunge le email recuperate dall'API alle <li>
                 resultEmailList.innerHTML += `<li>${response.data.response}</li>`;
             })
             .catch(error => console.error(error));
@@ -27,16 +27,16 @@ buttonNewEmail.addEventListener('click', loadEmails);
 
 /*const loadEmails = () => {
 
-    // svuota console
-    console.clear();
+    
     // svuota email list prima di generarla
     resultEmailList.innerHTML = '';
-
+    // Ciclo per ottenere 10 email
     for (let i = 0; i < 10; i++) {
+        //FETCH
         fetch("https://flynn.boolean.careers/exercises/api/random/mail")
             .then(response => response.json())
             .then(data => {
-                console.log(data);
+                // Template literal che aggiunge le email recuperate dall'API alle <li>
                 resultEmailList.innerHTML += `<li>${data.response}</li>`;
             })
             .catch(error => console.error(error));
