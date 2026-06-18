@@ -4,7 +4,7 @@ JavaScript exercise using a course-provided API to fetch random email addresses 
 
 # Target
 
-The application retrieves 10 email addresses from the course-provided API and renders them dynamically inside a list element on the page.
+The application generates 10 email addresses from the course-provided API and renders them dynamically inside a list element on the page.
 
 **Bonus**
 
